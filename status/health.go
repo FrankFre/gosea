@@ -9,7 +9,7 @@ import (
 func Health(w http.ResponseWriter, r *http.Request)  {
 	w.Header().Set("content-type", "text/plain")
 
-	status := "Ok"
+	status := "OK"
 
 	w.Write([]byte(status))
 
