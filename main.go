@@ -37,9 +37,6 @@ func main() {
 		Handler: mux,
 	}
 
-	/*go srv.ListenAndServe() // mit Fehlerbehandlung siehe Docs
-	*/
-
 	go func() {
 		err := srv.ListenAndServe()
 		if err != nil && !errors.Is(err, http.ErrServerClosed) {
