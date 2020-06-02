@@ -1,1 +1,14 @@
 GET http://localhost:8000/health
+
+###
+
+GET http://localhost:8000/api
+
+###
+
+POST http://localhost:8000/api
+Accept: application/javascript
+
+{
+
+}
